@@ -4,7 +4,7 @@ const {SerialPort} = require('serialport');
 SerialPort.list().then(ports => {
   console.log('Available serial ports:');
   ports.forEach(port => {
-    console.log(port.path);
+    console.log(port.path,port.manufacturer);
   });
 }).catch(err => {
   console.error('Error listing serial ports:', err);
