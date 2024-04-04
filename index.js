@@ -1,4 +1,4 @@
-const SerialPort = require('serialport');
+const {SerialPort} = require('serialport');
 
 // List serial ports
 SerialPort.list().then(ports => {
